@@ -1,0 +1,16 @@
+<h1>Welcome to the Bluemix Social Login Sample App</h1>
+<div class="page-desc">Please log in using one of the following Social Networks...</div>
+
+<div class="social-login-buttons">
+  <div>
+    <a id="google-signin-link" href="<%= user_omniauth_authorize_path(:google_oauth2) %>">
+      <%= image_tag('login_google.png', class: "login-google-button") %>
+    </a>
+  </div>
+
+  <div>
+    <a id="facebook-signin-link" href="<%= user_omniauth_authorize_path(:facebook) %>">
+      <%= image_tag('login_facebook.png', class: "login-facebook-button") %>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h1>Congrats <%= current_user.first_name %>!</h1>
+
+<div class="page-desc">You have successfully logged in which provides the app with the following information:</div>
+<div>Profile Image: <img src="<%= current_user.image_url %>"></div>
+<div>Name: <%= current_user.name %></div>
+<div>Gender: <%= current_user.gender %></div>
+<div>Email: <%= current_user.email %></div>
+<div>Provider: <%= current_user.provider %></div>
+<div>Provider Profile ID: <%= current_user.uid %></div>
+<br>
+<br>
+<%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
