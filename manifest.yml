@@ -7,3 +7,6 @@ applications:
   instances: 1
   memory: 128M
   command: rake db:migrate; bin/rails server -p $PORT -e $RAILS_ENV
+  buildpack: ruby_buildpack
+  services:
+  - social-auth-mysql
